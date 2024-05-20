@@ -1,2 +1,17 @@
-/* место для вашего кода */
-/* Тестовый коммит */
+body {
+    font-family: "raleway", Arial, sans-serif;
+    font-weight: normal;
+}
+
+li {
+    list-style: circle;
+    text-decoration: underline;
+}
+
+li:first-child {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+
