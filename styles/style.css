@@ -1,34 +1,81 @@
 
 .header {
+    width: 1052px;
+    margin: 92px 24px;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center; 
+}
+
+.header__menu {
     display: flex;
-    justify-content: space-between;
+    width: auto;
+    justify-content: flex-start;
     align-items: center;
-    padding: 92px 24px; 
 }
 
 .header__links-list {
     display: flex;
-    justify-content: space-around;
-    gap: 40px;
-    
-}
-
-li {
+    padding: 0;
+    margin: 44px 36px 39px 26.52px;
+    gap: 33px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
     list-style: circle;
-    text-decoration: underline;
+    line-height: 21.13px;
 }
 
-li:first-child {
+.header__link {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.header__links-list-item_no-bullit {
     list-style-type: none;
+}
+
+.header__link_active {
     text-decoration: none;
 }
 
-.header__logo {
-    display: block;
-    width: 129.11px;
-    height: 104.65px;
+.header__links-list-item.header__link.see__lots {
+    letter-spacing: 0.01em;
+    text-wrap: nowrap;
 }
 
+.header__links-list-item.header__link.about__auction {
+    letter-spacing: -0.004em;
+    text-wrap: nowrap;
+}
+
+.header__logo {  
+    width: 136px;
+    height: 105px;
+}
+ 
+.address {
+    display: grid;
+    margin: 5px 22px 2px 192px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    line-height: 24.3px;
+    letter-spacing: 0.01em;
+
+}
+
+.header__address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    
+}
 
 
 
