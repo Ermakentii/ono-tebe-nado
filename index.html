@@ -2,12 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="/fonts/fonts.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="header">
@@ -51,7 +51,7 @@
               >БE</span
             ></span>
           <span class="aligned-text aligned-text_right"><span class="letter-spacing-extended">
-            Н</span>АД<span class="no-letter-spacing">О</span>
+            Н</span>АД<span class="no-letter-spacing">О</span></span>
         </h1>
         <div class="cover__description">
           <p class="cover__description-text">
@@ -67,9 +67,9 @@
             <a class="card-link" href="#0">
               <article class="card card_type_film">
                 <div class="overlay"></div>
-                <h3 class="card__title">
+                <h4 class="card__title">
                   Фильм режиссёра, который бросил киношколу
-                </h3>
+                </h4>
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
@@ -82,9 +82,9 @@
             <a class="card-link" href="#0">
               <article class="card card_type_book">
                 <div class="overlay"></div>
-                <h3 class="card__title">
+                <h4 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
-                </h3>
+                </h4>
                 <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
@@ -100,9 +100,9 @@
             <a class="card-link" href="#0">
               <article class="card card_type_picture">
                 <div class="overlay"></div>
-                <h3 class="card__title">
+                <h4 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
-                </h3>
+                </h4>
                 <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
@@ -116,19 +116,20 @@
         <a class="lots__look-more-link" href="#">посмотреть больше</a>
       </section>
       <section class="about">
-        <div class="about__column">
           <div class="about__logo">
-            <img class="about__logo-image" />
+            <img 
+            src="./images/logo-white.svg"
+            alt="Логотип"
+            class="about__logo-image">
           </div>
-        </div>
-        <div class="about__column">
           <h2 class="about__title">Об аукционе</h2>
-          <p class="about__text-gap">
-            Здесь вы не встретите очередное пафосное собрание невероятно
-            дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
-            один аукцион. Потому что кому нужен дневник девочки-подростка или
+          <div class="about__text">
+            <p class="about__text-gap">
+            Здесь вы не встретите очередное <span class="about__text-gap_spacing-regular">пафосное собрание невероятно
+            дорогого антиквариата.</span> Наши лоты вообще не должны <span class="about__text-gap_spacing-minus-one">были попасть</span> ни на
+            один аукцион. <span class="about__text-gap_spacing-positive">Потому что кому нужен дневник девочки-подростка или
             картина, которую может нарисовать даже ребёнок? Кому нужны все эти
-            странные вещи, созданные любителями?
+            странные вещи, созданные любителями?</span>
           </p>
           <p class="about__text-withoutgap">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё
@@ -150,25 +151,35 @@
           265, Амстердам
         </div>
       </address>
-      <!-- <nav class="footer__menu">
+      <nav class="header__menu">
         <ul class="header__links-list">
-          <li>
-            <div class="header__links-list-item_no-bullit header__link">
-              главная
-            </div>
+          <li class="header__links-list-item_no-bullit">
+            <a class="header__link_active"> главная </a>
           </li>
-          <li>
-            <div class="header__links-list-item header__link_active">
-              посмотреть лоты
-            </div>
+          <li class="header__links-list-item">
+            <a class="header__link see__lots" href="#0">посмотреть лоты</a>
           </li>
-          <li>
-            <div class="header__links-list-item header__link_active">
-              об аукционе
-            </div>
+          <li class="header__links-list-item">
+            <a class="header__link about__auction" href="#0">об аукционе </a>
           </li>
         </ul>
-      </nav> -->
+      </nav>
+      <div>
+        <ul class="footer__social-list">
+          <li class="footer__social-list-item">
+            <a class="footer__social-link" href="#0"></a>
+            <img src="./images/yt.svg" alt="Логотип Youtube">
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-link" href="#0"></a>
+            <img src="./images/vk.svg" alt="Логотип VK">
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-link" href="#0"></a>
+            <img src="./images/pinterest.svg" alt="Логотип Pinterest">
+          </li>
+        </ul>    
+      </div>
     </footer>
   </body>
 </html>

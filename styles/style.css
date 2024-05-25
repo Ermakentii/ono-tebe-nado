@@ -86,7 +86,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
 }
 
 .overlay {
@@ -149,6 +148,7 @@
     color: #FFFFFF;
     word-spacing: 18.5px;
 }
+
 button {
     font-style: normal;
     font-weight: 500;
@@ -266,7 +266,111 @@ button {
     text-decoration-thickness: 1px;
     text-underline-offset: 7px;
 }
-   
-    
 
+.about {
+    margin-top: 187px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-block-end: 180px;
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    grid-template-rows: 235px 1fr;
+    column-gap: 25px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__logo {
+    display: flex;
+    background-color: #000000;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    /* align-self: center; */
+    justify-self: center;
+    /* align-items: center; */
+    justify-content: space-around;    
+}
+
+.about__logo img {
+    width: 62%;
+    height: auto;
+} 
+
+.about__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.about__text {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.about__text-gap {  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.about__text-withoutgap {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.about__text-gap {
+    margin-bottom: 25px;
+}
+
+.about__text-gap_spacing-regular {
+    letter-spacing: 0;
+}
+
+.about__text-gap_spacing-minus-one {
+    letter-spacing: 0.01em;
+}
+
+.footer {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer .address {
+    margin: 0;
+}
+
+.footer .header__links-list {
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    gap: 0;
+    align-items: center;
+    line-height: 21px;
+}
+
+.footer__social-list-item img {
+    width: 48px;
+    height: 48px
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+}
     
