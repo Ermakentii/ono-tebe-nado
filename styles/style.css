@@ -105,7 +105,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 100px;
-  line-height: 115%;
+  line-height: 123%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #ffffff;
@@ -121,6 +121,7 @@
 
 .aligned-text_right {
   text-align: right;
+  letter-spacing: 19px;
 }
 
 .letter-spacing-extended {
@@ -343,6 +344,7 @@ button {
   margin-right: 50px;
   align-items: flex-start;
   justify-content: space-between;
+  margin-block-end: 88px;
 }
 
 .footer .address {
