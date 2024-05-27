@@ -1,16 +1,16 @@
 .header {
-  width: 1052px;
+  padding-left: 24px; /* Никита, не очень разобрался в комментарии: Вместо ширины можно добавить padding для каждой секции от краёв экрана, чтобы был отступ от краёв экрана при любой ширине секции. Разве паддинги это не внутренние отступы? Почему нам не использовать Margin? Прошу подсказать. */
+  padding-right: 24px;
   margin: 92px auto 96px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  position: relative;
+  justify-items: center;
 }
 
 .header__links-list {
   display: flex;
-  margin: 44px 36px 39px 26.52px;
-  gap: 33px;
+  gap: 28px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -43,12 +43,6 @@
   text-wrap: nowrap;
 }
 
-.header__logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .header__logo-image {
   width: 148px;
   height: 105px;
@@ -56,7 +50,8 @@
 
 .address {
   display: grid;
-  width: 240px;
+  justify-self: end;
+  max-width: 240px;
   margin-right: 25.48px;
   font-style: normal;
   font-weight: 400;
@@ -69,7 +64,8 @@
 
 .header__address {
   margin-right: 28px;
-  width: 237px;
+  max-width: 237px;
+  width: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -78,10 +74,8 @@
 }
 
 .cover {
+  padding: 137px 50px 50px;
   position: relative;
-  width: 100%;
-  min-height: 757px;
-  padding: 0;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -98,11 +92,9 @@
 }
 
 .cover__title {
-  position: relative;
-  padding-top: 165px;
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
   font-style: normal;
   font-weight: 700;
   font-size: 100px;
@@ -110,6 +102,7 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #ffffff;
+  position: relative;
 }
 
 .aligned-text {
@@ -130,17 +123,15 @@
 }
 
 .cover__description {
-  position: absolute;
-  bottom: 0;
-  left: 78px;
-  right: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 51px;
+  margin-top: 112px;
+  position: relative;
 }
 
 .cover__description-text {
+  margin-left: 28px;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -151,10 +142,13 @@
 }
 
 button {
+  padding: 12px 32px;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background-color: transparent;
@@ -194,6 +188,11 @@ button {
   flex-grow: 1;
 }
 
+.lots__card-list article {
+  width: 334px;
+  height: 563px;
+}
+
 .lots__card-list-item .card-link {
   display: block;
   text-decoration: none;
@@ -204,9 +203,9 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 334px;
-  height: 563px;
   z-index: 0;
+  min-width: 100%;
+  min-height: 100%;
   padding: 51px 40px 48px;
 }
 
