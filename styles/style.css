@@ -308,9 +308,6 @@ button {
 .about__text {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-}
-
-.about__text {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
