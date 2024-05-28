@@ -11,17 +11,12 @@
 .header__links-list {
   display: flex;
   gap: 28px;
+  font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   list-style: circle;
   line-height: 18px;
-}
-
-.header__link {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
 }
 
 .header__links-list-item_no-bullit {
@@ -31,6 +26,12 @@
 .header__link_active {
   text-decoration: none;
   pointer-events: none;
+}
+
+.header__link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .header__links-list-item.header__link.see__lots {
@@ -53,6 +54,7 @@
   justify-self: end;
   max-width: 240px;
   margin-right: 25.48px;
+  font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -66,6 +68,7 @@
   margin-right: 28px;
   max-width: 237px;
   width: 100%;
+  font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -94,11 +97,12 @@
 .cover__title {
   display: flex;
   flex-direction: column;
-  margin-top: 32px;
+  margin-top: 15px;
+  font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 100px;
-  line-height: 123%;
+  line-height: 130%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #ffffff;
@@ -113,13 +117,13 @@
   text-align: center;
 }
 
-.aligned-text_right {
-  text-align: right;
-  letter-spacing: 19px;
-}
-
 .letter-spacing-extended {
   letter-spacing: 60px;
+}
+
+.aligned-text_right {
+  text-align: right;
+  letter-spacing: 20px;
 }
 
 .cover__description {
@@ -132,6 +136,7 @@
 
 .cover__description-text {
   margin-left: 28px;
+  font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -142,7 +147,7 @@
 }
 
 button {
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -163,6 +168,7 @@ button {
 }
 
 .lots__heading {
+  font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -206,31 +212,13 @@ button {
   min-width: 100%;
   min-height: 100%;
   padding: 51px 40px 48px;
-}
-
-.card_type_film {
-  background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.card_type_book {
-  background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.card_type_picture {
-  background-image: url(../images/card-lot-03.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .card__title {
-  font-family: "Raleway";
+  font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -244,7 +232,7 @@ button {
 }
 
 .card__text {
-  font-family: "Raleway";
+  font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -253,9 +241,21 @@ button {
   z-index: 1;
 }
 
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
 .lots__look-more-link {
-  padding: 64px;
-  font-family: "Raleway";
+  margin: 64px;
+  font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -295,6 +295,7 @@ button {
 }
 
 .about__title {
+  font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -306,6 +307,7 @@ button {
 .about__text {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -339,13 +341,13 @@ button {
   line-height: 21px;
 }
 
-.footer__social-list-item img {
-  width: 48px;
-  height: 48px;
-}
-
 .footer__social-list {
   display: flex;
   gap: 48px;
   list-style: none;
+}
+
+.footer__social-list-item img {
+  width: 48px;
+  height: 48px;
 }
