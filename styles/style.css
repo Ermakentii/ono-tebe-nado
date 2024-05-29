@@ -1,16 +1,21 @@
 .header {
-  padding-left: 24px; /* Никита, не очень разобрался в комментарии: Вместо ширины можно добавить padding для каждой секции от краёв экрана, чтобы был отступ от краёв экрана при любой ширине секции. Разве паддинги это не внутренние отступы? Почему нам не использовать Margin? Прошу подсказать. */
+  padding-left: 24px;
   padding-right: 24px;
   margin: 92px auto 96px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  justify-items: center;
 }
+
+/* .header__menu {
+  justify-self: center;
+  align-self: center;
+} */
 
 .header__links-list {
   display: flex;
-  gap: 28px;
+  justify-content: space-evenly;
+  padding-right: 0.3em;
   font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -39,8 +44,7 @@
   text-wrap: nowrap;
 }
 
-.header__links-list-item.header__link.about__auction {
-  letter-spacing: -0.004em;
+.header__links-list-item .header__link.about__auction {
   text-wrap: nowrap;
 }
 
@@ -53,7 +57,7 @@
   display: grid;
   justify-self: end;
   max-width: 240px;
-  margin-right: 25.48px;
+  margin-right: 30px;
   font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -77,14 +81,14 @@
 }
 
 .cover {
-  padding: 137px 50px 50px;
-  position: relative;
+  padding: 165px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
-
+ 
 .overlay {
   position: absolute;
   width: 100%;
@@ -95,43 +99,48 @@
 }
 
 .cover__title {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
+  row-gap: 18px;
   font-family: Raleway, Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 100px;
-  line-height: 130%;
-  letter-spacing: 0.3em;
+  line-height: calc(100 / 100 * 100%);
   text-transform: uppercase;
   color: #ffffff;
-  position: relative;
+  letter-spacing: 0.3em;
 }
 
-.aligned-text {
-  display: block;
+.aligned-text_left {
+  line-height: calc(116 / 100 * 100%);
 }
 
 .aligned-text_center {
   text-align: center;
+  letter-spacing: 0.3em;
+  padding-right: 0.2em;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 60px;
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: normal;
 }
 
 .aligned-text_right {
   text-align: right;
-  letter-spacing: 20px;
 }
 
 .cover__description {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  margin-top: 135px;
   align-items: center;
-  margin-top: 112px;
-  position: relative;
 }
 
 .cover__description-text {
@@ -140,10 +149,10 @@
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  line-height: 28px;
+  line-height: calc(28 / 22 * 100%);
   text-transform: uppercase;
   color: #ffffff;
-  word-spacing: 18.5px;
+  word-spacing: 0.84em;
 }
 
 button {
@@ -151,14 +160,15 @@ button {
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
-  line-height: 26px;
+  line-height: calc(26 / 22 * 100%);
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background-color: transparent;
   border: 1px solid #ffffff;
-  width: 256px;
   padding: 12px 32px 11px 31px;
+  cursor: pointer; 
+  user-select: none;
 }
 
 .lots {

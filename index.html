@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    
   </head>
   <body>
     <header class="header">
@@ -44,23 +45,15 @@
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="cover__title">
-          <span class="aligned-text"
-            >О<span class="letter-spacing-extended">но</span></span
-          >
-          <span class="aligned-text aligned-text_center"
-            >те<span class="letter-spacing-extended">бе</span></span
-          >
-          <span class="aligned-text aligned-text_right"
-            ><span class="letter-spacing-extended">н</span>а<span
-              class="no-letter-spacing"
-              >д</span>о</span> 
-          <!-- Никита, спасибо за комментарии и ревью, можете подсказать какой самый оптимальный путь выравнивниваия буквы О? Чтобы я не делал, у меня съезжают все остальные эллементы -->
+          <span class="aligned-text aligned-text_left">О<span class="letter-spacing-extended">н</span>о</span>
+          <span class="aligned-text aligned-text_center">те<span class="letter-spacing-extended">б</span>е</span>
+          <span class="aligned-text aligned-text_right"><span class="letter-spacing-extended">н</span>ад<span class="no-letter-spacing">о</span></span>        
         </h1>
         <div class="cover__description">
           <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet__button">Сделать ставку</button>
+          <button class="bet__button" type="button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
@@ -127,7 +120,7 @@
           />
         </div>
         <h2 class="about__title">Об аукционе</h2>
-        <article class="about__text">
+        <div class="about__text">
           <p class="about__text">
             Здесь вы не встретите очередное пафосное собрание невероятно
             дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
@@ -143,7 +136,7 @@
             представить современную культуру. Когда в эти вещи не верил никто,
             продолжали верить их создатели. И сейчас эти лоты стали культовыми.
           </p>
-        </article>
+        </div>
       </section>
     </main>
     <footer class="footer">
